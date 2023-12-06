@@ -1,4 +1,10 @@
-# My LunarVim Config
+# LunarVim Configs
+
+## Intro
+This repository is a fork of ChristianChiarulli/lvim which consists of advanced LunarVim configurations. This fork will disable the unnecessary configurations and remove the less useful key-maps. Please note that I'll be committing changes as per my need. So, it will be incremental configurations.
+
+# Instructions
+To utlize Chris's configurations fully, below instructions might prove useful.
 
 ## Get healthy
 
@@ -7,42 +13,24 @@ Open `nvim` and enter the following:
 ```
 :checkhealth
 ```
+## The legendary copy paste problem
+You'll probably notice you don't have support for copy/paste also that python and node haven't been setup. So let's fix that.
 
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
+👉 First we'll fix copy/paste
 
-So let's fix that
+- On Mac: `pbcopy` should be builtin
 
-First we'll fix copy/paste
+- On Ubuntu: ```sh sudo apt install xsel```
 
-- On mac `pbcopy` should be builtin
+- On Arch Linux: ```sh sudo pacman -S xsel```
 
-- On Ubuntu
+👉 Next we need to install python support (node is optional)
 
-  ```sh
-  sudo apt install xsel
-  ```
+- Neovim python support: ```sh pip install pynvim```
 
-- On Arch Linux
+- Neovim node support: ```sh npm i -g neovim```
 
-  ```sh
-  sudo pacman -S xsel
-  ```
-
-Next we need to install python support (node is optional)
-
-- Neovim python support
-
-  ```sh
-  pip install pynvim
-  ```
-
-- Neovim node support
-
-  ```sh
-  npm i -g neovim
-  ```
-
-## Fonts
+## Get stlylish with Fonts and Icons
 
 - [A nerd font](https://github.com/ryanoasis/nerd-fonts)
 
@@ -78,9 +66,22 @@ $ curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/downloa
 $ chmod +x ~/.local/bin/rust-analyzer
 ```
 
-## TODO
+## TODOs
 
 - use codicons (update codicons)
 - fix border
 - darken border around cmp
 - hl groups for noice
+
+# Shameless Plugs🤓
+⭐️☝️
+
+Visit my [website][1] here.
+
+Follow me on
+[LinkedIn][2]
+[GitHub][3]
+
+[1]: https://tanweerashif.com
+[2]:https://www.linkedin.com/in/tanweerashif/
+[3]:https://github.com/HacksPloiter
